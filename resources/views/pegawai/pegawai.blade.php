@@ -21,7 +21,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($hasil as $key => $item)
+                                            @foreach ($pegawai as $key => $item)
                                                 <tr>
                                                     <td>{{++$key}}</td>
                                                     <td>{{$item->name}}</td>

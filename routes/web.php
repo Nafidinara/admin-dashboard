@@ -16,9 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.dashboard');
 });
-
-Route::get('pegawai', function () {
-    return view('pegawai.pegawai');
-});
-
-Route::get('login','PegawaiController@index');

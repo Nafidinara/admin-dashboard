@@ -37,8 +37,6 @@ class PegawaiController extends Controller
         ->get();
 
         $data = $response->data;
-
-        return view('pegawai.pegawai',['hasil' => $data]);
-
+        return view('pegawai.pegawai',['pegawai' => $data]);
     }
 }
