@@ -109,7 +109,7 @@
                             <a href="{{ url('divisi') }}" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Divisi</a>
                         </li>
                         <li class="hover">
-                            <a href="{{ url('pegawai') }}" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Pegawai</a>
+                            <a href="{{ url('kandidat') }}" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Pegawai</a>
                         </li>
                         <li class="hover">
                             <a href="icon-fontawesome.html" class="waves-effect"><i class="fa fa-font m-r-10" aria-hidden="true"></i>Printer</a>
@@ -202,6 +202,7 @@
     <script src="{{asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
     <!--Custom JavaScript -->
     <script src="{{asset('assets/js/custom.min.js')}}"></script>
+    <script src="{{asset('assets/ckeditor/ckeditor.js')}}"></script>
     <!-- ============================================================== -->
     <!-- This page plugins -->
     <!-- ============================================================== -->
