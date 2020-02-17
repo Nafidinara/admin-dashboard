@@ -14,7 +14,7 @@
                                                 <h6 class="card-subtitle">Add class <code>.table</code></h6>
                                         </div>
                                         <div class="float-right col-md-6 mt-lg-2">
-                                        <a href="{{url('form')}}" class="btn pull-right hidden-sm-down btn-success"> Upgrade to Pro</a>
+                                        <a href="{{url('kandidat/form')}}" class="btn pull-right hidden-sm-down btn-success">+ Tambah Kandidat</a>
                                         </div>
                                 </div>
                                 <div class="table-responsive">
@@ -23,7 +23,7 @@
                                             <tr>
                                                 <th>No</th>
                                                 <th>Nama</th>
-                                                <th>Divisi</th>
+                                                <th>Kelamin</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
@@ -32,6 +32,7 @@
                                                 <tr>
                                                     <td>{{++$key}}</td>
                                                     <td>{{$item->nama}}</td>
+                                                    <td>{{$item->kelamin}}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>

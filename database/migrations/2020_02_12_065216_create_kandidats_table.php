@@ -16,6 +16,7 @@ class CreateKandidatsTable extends Migration
         Schema::create('kandidats', function (Blueprint $table) {
             $table->bigIncrements('kandidat_id');
             $table->string('nama');
+            $table->string('kelamin');
             $table->timestamps();
         });
     }

@@ -8,7 +8,7 @@ class Kandidat extends Model
 {
     protected $primaryKey = 'kandidat_id';
 
-    protected $fillable = ['nama'];
+    protected $fillable = ['nama','kelamin'];
 
     public function Penghargaans(){
         return $this->hasMany(Penghargaan::class);

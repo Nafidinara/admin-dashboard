@@ -17,10 +17,11 @@ Route::get('/', function () {
     return view('dashboard.dashboard');
 });
 
-Route::get('/form', function () {
-    return view('kandidat.form');
+
+Route::group(['prefix' => 'kandidat'],function(){
+    Route::get('/','KandidatController@index');
+    Route::get('/form',function(){
+        return view('kandidat.form');
+    });
+    Route::post('/addproses','KandidatController@store');
 });
-
-Route::get('/kandidat','KandidatController@index');
-
-Route::get('kandidat/tambah','KandidatController@store');

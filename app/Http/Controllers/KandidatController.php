@@ -27,12 +27,13 @@ class KandidatController extends Controller
     public function store(Request $request)
     {
         $kandidat = Kandidat::create([
-            'nama' => 'Alfara'
+            'nama' => 'Alfara',
+            'kelamin' => 'perempuan'
         ]);
 
         $kandidat->save();
 
-        return view('pegawai.pegawai');
+        return redirect('kandidat');
     }
 
     /**

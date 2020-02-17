@@ -1,7 +1,8 @@
 @extends('main.sidebar')
 
 @section('content')
-<form>
+<form method="POST" action="{{url('kandidat/addproses')}}">
+    {{ csrf_field() }}
     <h1>Biodata</h1>
     <div class="form-group col-md-6">
         <label for="inputName">Nama Lengkap</label>
