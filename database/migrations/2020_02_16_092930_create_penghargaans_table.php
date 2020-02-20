@@ -19,7 +19,7 @@ class CreatePenghargaansTable extends Migration
             $table->foreign('Kandidat_id')->references('kandidat_id')->on('kandidats')->onDelete('cascade');
             $table->string('nama');
             $table->string('deskripsi');
-            $table->string('kredensial');
+            $table->string('kredensial')->nullable();
             $table->timestamps();
         });
     }

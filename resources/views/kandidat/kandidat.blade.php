@@ -33,6 +33,10 @@
                                                     <td>{{++$key}}</td>
                                                     <td>{{$item->nama}}</td>
                                                     <td>{{$item->kelamin}}</td>
+                                                    <td>
+                                                        <a href="/kandidat/edit/{{ $item->kandidat_id }}" class="btn btn-warning">Edit</a>
+                                                        <a href="/kandidat/hapus/{{ $item->kandidat_id }}" class="btn btn-danger">Hapus</a>
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>

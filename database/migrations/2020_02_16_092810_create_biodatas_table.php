@@ -20,10 +20,10 @@ class CreateBiodatasTable extends Migration
             $table->string('visi');
             $table->longText('misi');
             $table->longText('alamat');
-            $table->longText('biografi');
-            $table->string('instagram');
-            $table->string('facebook');
-            $table->string('telfon');
+            $table->longText('biografi')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('telfon')->nullable();
             $table->timestamps();
         });
     }

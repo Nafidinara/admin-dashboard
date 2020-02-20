@@ -18,10 +18,13 @@ Route::get('/', function () {
 });
 
 
-Route::group(['prefix' => 'kandidat'],function(){
+ Route::group(['prefix' => 'kandidat'],function(){
+    
     Route::get('/','KandidatController@index');
+    Route::get('hapus/{id}','KandidatController@destroy');
+    Route::post('/addproses','KandidatController@store');
     Route::get('/form',function(){
         return view('kandidat.form');
     });
-    Route::post('/addproses','KandidatController@store');
-});
+ });
+
